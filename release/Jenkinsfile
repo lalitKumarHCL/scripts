@@ -7,9 +7,8 @@ node {
 
     stage('Git Checkout') {
        git (
-                    url: ${repoUrl},
-                    branch: 'master'
-                )
-
+                url: ${repoUrl},
+                branch: 'master'
+            )
     }
 }
