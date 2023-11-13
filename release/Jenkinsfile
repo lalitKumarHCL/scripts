@@ -1,7 +1,8 @@
 properties([
     parameters([
         string(name: 'repoUrl', defaultValue: '', description: 'give github repo url to build'),
-        string(name: 'branchName', defaultValue: 'master', description: 'give github repo branch to build')
+        string(name: 'branchName', defaultValue: 'master', description: 'give github repo branch to build'),
+        string(name: 'branchIgnore', defaultValue: 'https://github.com/lalitKumarHCL/test.git, https://github.com/lalitKumarHCL/scripts.git', description: 'give github repo branch to ignore for commit'),
     ])
 ])
 node {
