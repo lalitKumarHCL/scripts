@@ -1,0 +1,15 @@
+properties([
+    parameters([
+        string(name: 'repoUrl', defaultValue: '', description: 'give github repo url to build'),
+    ])
+])
+node {
+
+    stage('Git Checkout') {
+       git (
+                    url: ${repoUrl},
+                    branch: 'master'
+                )
+
+    }
+}
