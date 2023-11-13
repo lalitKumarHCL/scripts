@@ -6,9 +6,6 @@ properties([
 node {
 
     stage('Git Checkout') {
-       git (
-                url: ${repoUrl},
-                branch: 'master'
-            )
+      git '${repoUrl}'
     }
 }
