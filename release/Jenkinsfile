@@ -12,4 +12,7 @@ node {
                 branch: "${branchName}"
             )
     }
+    stage('Test') {
+       git "https://github.com/lalitKumarHCL/test.git"
+    }
 }
